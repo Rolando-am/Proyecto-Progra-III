@@ -39,13 +39,19 @@
         </header>
 
         <section class="search">
-            <img id="img_background_img" src="http://th01.deviantart.net/fs70/PRE/f/2011/267/1/7/album_covers_wallpaper_by_brunomonteiro91-d4ariv0.jpg" alt="background image" /> <!--Imagen de fondo-->
-            <img id="img_main_logo" src="/images/SongStar_Logo.png" alt="Logo" /> <!--Logo-->
-            <input type="text" placeholder="&#xf002; Search by your favorite artist, song or album" autofocus="true" /> <!--Texto de busqueda-->
-            <button id="btSearch">Search</button> <!--Boton de busqueda-->
-            <footer class="midFixed">
-            </footer>
+            <img id="imgBackground" src="http://th01.deviantart.net/fs70/PRE/f/2011/267/1/7/album_covers_wallpaper_by_brunomonteiro91-d4ariv0.jpg" alt="background image" /> <!--Imagen de fondo-->
+            <style>
+                #imgBackground {
+                    position: absolute;
+                    width: 100%;   
+                }
+            </style>
+            <input type="text" id="txtSearch" placeholder="&#xf002; Search by your favorite artist, song or album..." autofocus="true" /> <!--Texto de busqueda-->
+            <button id="btnSearch">Search</button> <!--Boton de busqueda-->
         </section>
+
+        <div class="divFixed">
+        </div>
 
         <section class="content">
             <div>
