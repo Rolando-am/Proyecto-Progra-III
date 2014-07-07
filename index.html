@@ -1,49 +1,74 @@
-<!--    |  | __ __| \  |  |     -->  
-<!--    __ |    |  |\/ |  |     -->
-<!--   _| _|   _| _|  _| ____|  -->
-<!--                            -->
+<!--   /$$   /$$ /$$$$$$$$ /$$      /$$ /$$       -->
+<!--  | $$  | $$|__  $$__/| $$$    /$$$| $$       -->
+<!--  | $$  | $$   | $$   | $$$$  /$$$$| $$       -->
+<!--  | $$$$$$$$   | $$   | $$ $$/$$ $$| $$       -->
+<!--  | $$__  $$   | $$   | $$  $$$| $$| $$       -->
+<!--  | $$  | $$   | $$   | $$\  $ | $$| $$       -->
+<!--  | $$  | $$   | $$   | $$ \/  | $$| $$$$$$$$ -->
+<!--  |__/  |__/   |__/   |__/     |__/|________/ -->
+<!--                                              -->
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
-	<head>
-		<meta charset="utf-8">
-		<title>SongStar | Discover, Listen, Share</title>
-		<link rel="shortcut icon" href="/users/ddailey/Proyecto Progra III/favicon.ico"/> <!--Favicon-->
-		<link rel="stylesheet" type="text/css" href="/users/ddailey/Proyecto Progra III/style.css"/> <!--Estilos-->
-	</head>
-	
-	<body>
-		<div class="div_top_panel"> <!--Contenedor de panel superior-->
-			<div id="div_top_cover_bar"> <!--Barra de fondo superior para navegación--> 
-			</div>
-			<ul id="ul_nav_bar"> <!--Menú de navegación-->
-				<li>Home</li>
-				<li>Login</li>
-				<li>Sign Up</li>
-			</ul>
-			<img id="img_background_img" src="http://th01.deviantart.net/fs70/PRE/f/2011/267/1/7/album_covers_wallpaper_by_brunomonteiro91-d4ariv0.jpg" alt="background image"/> <!--Imagen de fondo-->
-			<img id="img_main_logo" src="/users/ddailey/Proyecto Progra III/images/SongStar_Logo.png" alt="Logo"/> <!--Logo-->
-			<input type="text" placeholder="Búsqueda por artista, canción o album..." autofocus="true"/> <!--Ingreso de texto de búsqueda-->
-			<input id="bt_search" type="submit" value="Buscar"/> <!--Botón de búsqueda-->
-			<div id="div_bottom_cover_bar"> <!--Barra de fondo inferior--> 
-			</div>
-		</div>
-		<h2> dfhdh</h2>
-		<div class="div_middle_panel"> <!--Panel intermedio-->
-			<div class="div_popular_songs"> <!--Contenedor de canciones populares-->
-				<h1>Popular</h1>
-				<p>Discover what other people are listening</p>
-				<img src="http://www.clker.com/cliparts/Z/C/1/n/M/2/youtube-style-play-button-md.png"/> <!--Imagen de play-->
-				<button id="bt_popular_playlist_previous">
-					<label for="bt_popular_playlist_previous">◄</label>
-				</button>
-				<button id="bt_popular_playlist_next">
-					<label for="bt_popular_playlist_next">►</label>
-				</button>
-			</div>
-		</div>
-	</body>
-	
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link href="favicon.ico" rel="shortcut icon">
+        <title>Discover, Listen, Share</title>
+    </head>
+
+    <body>
+        <header class="fixed">
+            <nav>
+                <input type="checkbox" id="chkMenu">
+                <style>
+                    #chkMenu{ 
+                        display: none;
+                    }
+                </style>
+                <label for="chkMenu">&#9776</label>
+                <ul id="navBar">
+                    <li>Home</li>
+                    <li>Login</li>
+                    <li>Sing Up</li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="search">
+            <img id="img_background_img" src="http://th01.deviantart.net/fs70/PRE/f/2011/267/1/7/album_covers_wallpaper_by_brunomonteiro91-d4ariv0.jpg" alt="background image" /> <!--Imagen de fondo-->
+            <img id="img_main_logo" src="/images/SongStar_Logo.png" alt="Logo" /> <!--Logo-->
+            <input type="text" placeholder="&#xf002; Search by your favorite artist, song or album" autofocus="true" /> <!--Texto de busqueda-->
+            <button id="btSearch">Search</button> <!--Boton de busqueda-->
+            <footer class="midFixed">
+            </footer>
+        </section>
+
+        <section class="content">
+            <div>
+                <h1>Popular</h1>
+                <p>Discover what others are listening</p>
+            </div>
+        </section>
+
+        <footer class="fixed">
+            <input type="checkbox" id="chkPlaylist">
+            <style>
+                #chkPlaylist{
+                    display: none;
+                }
+            </style>
+            <label for="chkPlaylist">Playlist &#xf106;</label>
+            <ul>
+                <li>View songs</li>
+                <li>Clear playlist</li>
+            </ul>
+        </footer>
+
+    </body>
+
 </html>
+
