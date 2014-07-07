@@ -1,0 +1,150 @@
+/*    /$$$$$$   /$$$$$$   /$$$$$$    */ 
+/*   /$$__  $$ /$$__  $$ /$$__  $$   */ 
+/*  | $$  \__/| $$  \__/| $$  \__/   */ 
+/*  | $$      |  $$$$$$ |  $$$$$$    */ 
+/*  | $$       \____  $$ \____  $$   */ 
+/*  | $$    $$ /$$  \ $$ /$$  \ $$   */ 
+/*  |  $$$$$$/|  $$$$$$/|  $$$$$$/   */ 
+/*   \______/  \______/  \______/    */ 
+/*                                   */                              
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #FF9900;
+}
+
+input {
+    font-size: 1em;
+    line-height: 1em;
+    font-family: 'Verdana, Geneva, sans-serif'; 
+}
+
+ul{
+    list-style: none;
+}
+
+.fixed, .divFixed {
+    position: fixed;
+    width: 100%;
+    background-color: #473F33;
+    background: #3D4444;
+    border: 1px solid #3D4444;
+    box-shadow: rgba(0, 0, 0, 0.0470588) 0px -1px 0px 0px inset;
+    display: block;
+    height: 2.5em;
+    line-height: 2.5em;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 25px;
+    display: inline;
+    color: white; 
+}
+
+nav ul li:hover {
+    color: #FF9900;
+    cursor: pointer;
+}
+
+header.fixed {
+    top: 0;
+    text-align: right;
+}
+
+footer.fixed {
+    bottom: 0;
+}
+
+#chkMenu ~ label{
+    position: absolute;
+    height: 1.5em;
+    line-height: 1.5em;
+    margin: 4px;
+    left: 5px;
+    border: 1px solid rgba(250, 164, 5, 0.15) rgba(250, 164, 5, 0.17) rgba(250, 164, 5, 0.2);
+    border-radius: 0 2.5px 2.5px 0;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    color:  #FF9900;
+    font-size:  18px;
+    padding: 2px 9px; 
+}
+
+#chkMenu ~ label:hover {
+    color: #FF9900;
+    border: 1px solid #FF9900;
+}
+
+#chkMenu:checked ~ label {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+    color: #9799a7;
+}
+
+
+.search {
+    margin-top: 42px;
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.search input, button {
+    position: relative;
+    display: inline-table;
+    top: 40%;
+    left: 33.4%;
+}
+
+#txtSearch {
+    padding: 0px 5px;
+    border: 1px solid rgba(23, 51, 79, 0.15) rgba(23, 51, 79, 0.17) rgba(23, 51, 79, 0.2);
+    box-shadow: 0 1px 0 rgba(8, 23, 38, 0.02) inset, 0 0 2px rgba(8, 23, 38, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 15px 0 0 15px;
+    min-width: 325px;
+    height: 30px;
+}
+
+#txtSearch:focus {
+    rgba(255, 255, 255, 0.9) padding-box; 
+}
+
+#btnSearch {
+    background-color: #FF9900;
+    color: white;
+    padding: 5px 9px;
+    border: 1px solid rgba(23, 51, 79, 0.15) rgba(23, 51, 79, 0.17) rgba(23, 51, 79, 0.2);
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    transition-property: background-color, border-color, box-shadow;
+    transition-duration: 150ms;
+    text-align: center;
+    height: 34px;
+}
+
+.divFixed {
+    top: 300px;
+}
+
+/*Diseño responivo*/
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
